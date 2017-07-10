@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilDescription"
+            android:layout_width="400dp"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripcion de piezas"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilQuantity"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="cantidad"
+                android:imeOptions="actionNext"
+                android:inputType="number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilDimension"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtDimension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dimension"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilUnitPrice"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtUnitPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Precio unitario"
+                android:imeOptions="actionNext"
+                android:inputType="number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilTotalPrice"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtTotalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Precion total"
+                android:inputType="number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="Cancelar"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:text="Aceptar"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</LinearLayout>
